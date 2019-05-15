@@ -1,0 +1,51 @@
+@import "bootstrap";
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700);
+
+// Font Variables
+$comfortaa: 'Comfortaa', cursive;
+
+// Styles
+body {
+  font-family: $comfortaa;
+  font-weight: normal;
+  background: $gray-100;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $comfortaa;
+  font-weight: bold;
+}
+
+.button {
+  font-family: $comfortaa;
+  font-weight: bold;
+}
+
+.navbar {
+  min-height: 11vh;
+}
+
+.car__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  box-shadow: 0.5rem 0.5rem 0.5rem lightgrey;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  &-header {
+    font-weight: bold;
+  }
+  &-body {
+    &--img {
+      height: 25vh;
+    }
+  }
+}
+
+.fa-tag {
+  color: yellowgreen;
+}

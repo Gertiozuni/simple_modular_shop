@@ -1,0 +1,100 @@
+@import "bootstrap";
+$main-color: #6394F8;
+$light-text: #ABB0BE;
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700);
+
+.header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+
+.header-logo:hover {
+  text-decoration: none;
+}
+.car__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  box-shadow: 0 0.5rem 0.5rem $gray-300;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  &-header {
+    font-weight: bold;
+  }
+  &-body {
+    &--img {
+      height: 25vh;
+    }
+  }
+}
+.cart {
+  color: #777777;
+  text-decoration: none;
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.shopping-cart {
+  margin: 20px 0;
+  float: right;
+  background: white;
+  width: 320px;
+  position: absolute;
+  border-radius: 3px;
+  top: .8rem;
+  border: 1px solid $gray-200;
+  padding: 20px;
+  .shopping-cart-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+    .shopping-cart-total {
+      float: right;
+    }
+  }
+  .shopping-cart-items {
+    padding-top: 20px;
+    li {
+      margin-bottom: 18px;
+      list-style: none;
+    }
+    img {
+      float: left;
+      margin-right: 12px;
+    }
+    .item-name {
+      display: block;
+      padding-top: 10px;
+      font-size: 16px;
+    }
+    .item-price {
+      color: $main-color;
+      margin-right: 8px;
+    }
+    .item-quantity {
+      color: $light-text;
+    }
+  }
+}
+
+.footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.footer p:last-child {
+  margin-bottom: 0;
+}
